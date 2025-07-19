@@ -79,3 +79,29 @@
 	</pluginRepositories>
 
 </project>
+<build>
+        <plugins>
+            <plugin>
+                <groupId>org.mule.tools.maven</groupId>
+                <artifactId>mule-maven-plugin</artifactId>
+                <version>3.8.0</version>
+                <extensions>true</extensions>
+
+                <configuration>
+                    <cloudHubDeployment>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <muleVersion>${mule.version}</muleVersion>
+                        <username>${anypoint.gousesystem}</username>
+                        <password>${anypoint.Aiza@2022!$}</password>
+                        <environment>${env}</environment>
+                        <applicationName>${appname}</applicationName>
+                        <businessGroup>${business}</businessGroup>
+                        <workerType>${vCore}</workerType>
+                        <workers>${workers}</workers>
+                        <objectStoreV2>true</objectStoreV2>
+                    </cloudHubDeployment>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
